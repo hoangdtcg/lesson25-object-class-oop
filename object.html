@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Array
+        let sanPham = ["Samsung s21", 20000, "Hàn Quốc", "Máy mới"];
+        // console.log(sanPham[0]);
+        // console.log(sanPham[1]);
+
+        //Object
+        let sanPhamObj = {
+            ten: "Samsung S21",
+            gia: 20000000,
+            xuatXu: "Hàn quốc",
+            moTa: "Máy mới"
+        }
+
+        let meo1 = {
+            ten: "Miu miu",
+            canNang: 6,
+            mauLong: "Vàng",
+
+            hienThiThongTin: function() {
+                console.log("Con mèo tên " + this.ten + " có cân nặng là " + this.canNang);
+            }
+        }
+
+
+        //Class - Mô tả chung của đối tượng
+        class Meo {
+            //method đặc biệt - khởi tạo
+            constructor(name, weight, color) {
+                this.ten = name;
+                this.canNang = weight;
+                this.mauLong = color;
+            }
+
+            hienThiThongTin() {
+                console.log("Con mèo tên " + this.ten + " có cân nặng là " + this.canNang);
+            }
+        }
+        //this đại diện cho đối tượng được tạo ra bởi class
+        //this chỉ dùng trong việc khai báo class hoặc đối tượng
+        let meo3 = new Meo("Chó", 10, "Đen"); //Tạo object từ mô tả của class thông qua từ khóa new
+        //
+        let meo4 = new Meo("Mèo", 7, "Trắng");
+
+        // console.log(sanPhamObj['ten']);
+        // console.log(sanPhamObj.ten);
+        // console.log(meo.ten)
+        // meo1.hienThiThongTin();
+        // meo2.hienThiThongTin();
+
+        // meo3.hienThiThongTin();
+        // meo4.hienThiThongTin();
+
+        Meo.hienThiThongTin()
+    </script>
+</body>
+
+</html>

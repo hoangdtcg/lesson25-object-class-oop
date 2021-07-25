@@ -1,0 +1,47 @@
+Lập trình tuần tự - hướng thủ tục
+ - Code chạy lần lượt từ trên xuống dưới
+
+Class - Là bản mô tả(thuộc tính và hành vi) của đối tượng, được sử dụng để tạo đối tượng 
+Đặt tên class viết tên chữ cái đầu tiên
+Hàm constructor tự động chạy khi khởi tạo đối tượng
+
+Object - Đối tượng
+
+Object Oriented Programming - OOP - Lập trình hướng đối tượng 
+Là 1 phương pháp(triết lý) lập trình mà ở đó quy mọi thứ về đối tượng để xử lý
+và thao tác
+
+Object là mô phỏng của các entity (đối tượng ngoài đời) vào trong lập trình
+Object có chứ các
+    - Property(Thuộc tính) - Attribute - Biến
+    - Method(Hành vi - phương thức của con người) - Hàm
+
+
+Khai báo class, khởi tạo object
+
+Ví dụ: Bài toán đèn pin:
+- đèn
+    - pin
+    + bật đèn: kiểm tra xem pin còn năng lượng không
+    nếu còn thì bật và trừ năng lượng
+    nếu hết thì không bật được và báo là hết pin
+- pin
+    - năng lượng  
+
+Bài toán: Tính xếp hạng học viên theo điểm trung 3 môn Toán Văn Anh
+B1 - Phân tích bài toán (Đưa ra các object) - Đưa ra được các thuộc tính và phương thức
+
+Student
+    - name
+    - grade
+    - gender
+    - mathScore
+    - liteScore
+    - englishScore
+    + getAvg
+    + getClasify
+
+B2 - Thiết kế class
+B3 - Khởi tạo đối tượng
+
+
